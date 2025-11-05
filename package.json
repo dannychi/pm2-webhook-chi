@@ -1,0 +1,48 @@
+{
+  "name": "pm2-webhook-chi",
+  "version": "1.0.3",
+  "description": "A pm2 monitor which sends log messages to webhook url.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PM2",
+    "webhook"
+  ],
+  "author": "DCHI",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "pm2": "^6.0.13",
+    "pmx": "^1.6.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannychi/pm2-webhook-chi.git"
+  },
+  "apps": [
+    {
+      "script": "index.js",
+      "merge_logs": true,
+      "max_memory_restart": "200M"
+    }
+  ],
+  "config": {
+    "webhookUrl": null,
+    "log": false,
+    "error": true,
+    "kill": true,
+    "exception": true,
+    "restart": true,
+    "reload": true,
+    "delete": true,
+    "stop": true,
+    "restart overlimit": true,
+    "exit": false,
+    "start": false,
+    "online": false,
+    "bufferMaxSecond": 5,
+    "buffer": true
+  }
+}
