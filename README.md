@@ -28,6 +28,12 @@ Update this module:
 pm2 module:update pm2-webhook-chi
 ```
 
+Publish this module:
+
+```
+npm publish
+```
+
 ## Configuration
 
 Here are the all configuration items and their default value.
