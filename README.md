@@ -22,6 +22,12 @@ pm2 set pm2-webhook-chi:webhookUrl https://www.webhook.com/notify.action
 
 ```
 
+Update this module:
+
+```
+pm2 module:update pm2-webhook-chi
+```
+
 ## Configuration
 
 Here are the all configuration items and their default value.
@@ -69,9 +75,3 @@ pm2 set pm2-webhook-chi:buffer true
 ```
 
 And the `bufferMaxSecond` specifies how long should the monitor program buffer the messages. The default value is 5, which means the message queue waits at most 5 seconds while the first message is arrived. Once the waiting time is over the limit, the notify task is executed immediately.
-
-## update
-
-```
-pm2 module:update pm2-webhook-chi
-```
