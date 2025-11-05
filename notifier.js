@@ -53,7 +53,7 @@ class Notifier {
       'ip': `${getLocalIpAddress()}`,
       'event': `${message.event}`,
       'title': `${message.name} ${message.isRepeat ? 'and others' : ''}`,
-      'description': `${encodeURIComponent(message.description)}`
+      'description': message.description
     };
 
     if (message.timestamp) {

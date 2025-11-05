@@ -52,7 +52,7 @@ function listenLog (bus) {
       messageQueue.addMessage({
         name: parseProcessName(data.process),
         event: 'log',
-        description: processLogMessage(data.data)
+        description: data.data
       });
     }
   });
