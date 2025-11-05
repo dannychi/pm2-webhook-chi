@@ -41,7 +41,6 @@ Here are the all configuration items and their default value.
   "exit": false,
   "start": false,
   "online": false,
-  "phone": null,
   "bufferMaxSecond": 5,
   "buffer": true
 }
