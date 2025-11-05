@@ -1,6 +1,6 @@
 {
   "name": "pm2-webhook-chi",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A pm2 monitor which sends log messages to webhook url.",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   },
   "apps": [
     {
+      "name": "pm2-webhook-chi",
       "script": "index.js",
       "merge_logs": true,
       "max_memory_restart": "200M"
